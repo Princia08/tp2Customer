@@ -18,8 +18,6 @@
         <ui:repeat value="#{beanNew.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
-        <h:form>
             <h:link outcome="formulaire_4?nb=#{beanNew.nombre}" value="Saisir un autre nombre"/>
-        </h:form>
     </h:body>
 </html>
